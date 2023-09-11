@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
+<body>
+    <div class="main-div">
+        <form method="post" action="@Url.Action("SubmitForm","DropDown")">
+            <div id="label-1">
+                <label for="selectedOption">Select the Department Name</label>
+            </div>
+            <br>
+            <select id="selectedOption" name="selectedOption">
+                <option value="Technology">Technology</option>
+                <option value="HR">HR</option>
+                <option value="Sales & Marketing">Sales & Marketing</option>
+                <option value="Procurement">Procurement</option>
+                <option value="Finance">Finance</option>
+                <option value="Analytics">Analytics</option>
+                <option value="Operations">Operations</option>
+                <option value="Legal">Legal</option>
+                <option value="R&D">R&D</option>
+            </select>
+            <br>
+            <button type="submit" id="button1">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

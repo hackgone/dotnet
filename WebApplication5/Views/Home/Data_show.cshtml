@@ -1,0 +1,58 @@
+﻿
+<html>
+<head>
+
+</head>
+<body>
+    <p>FIRST 5 PERSONS</p>
+    <table border="1">
+
+        <thead>
+            <tr>
+                @foreach (var key in ViewBag.columns)
+                {
+                    <th>@(key)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.first_5_array)
+            {
+                <tr>
+                    @foreach (var key in ViewBag.columns)
+                    {
+                        <td>@(item[key])</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>LAST 5 PERSONS</p>
+    <table border="1">
+
+        <thead>
+            <tr>
+                @foreach (var key in ViewBag.columns)
+                {
+                    <th>@(key)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.last_5_array)
+            {
+                <tr>
+                    @foreach (var key in ViewBag.columns)
+                    {
+                        <td>@(item[key])</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
